@@ -21,6 +21,7 @@
 		357102D218DAA5B100DA17E4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 357102B418DAA5B000DA17E4 /* UIKit.framework */; };
 		357102DA18DAA5B100DA17E4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 357102D818DAA5B100DA17E4 /* InfoPlist.strings */; };
 		357102DC18DAA5B100DA17E4 /* VehicleServiceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 357102DB18DAA5B100DA17E4 /* VehicleServiceTests.m */; };
+		357102E618DAA98800DA17E4 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 357102E518DAA98800DA17E4 /* background.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		357102D718DAA5B100DA17E4 /* VehicleServiceTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VehicleServiceTests-Info.plist"; sourceTree = "<group>"; };
 		357102D918DAA5B100DA17E4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		357102DB18DAA5B100DA17E4 /* VehicleServiceTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VehicleServiceTests.m; sourceTree = "<group>"; };
+		357102E518DAA98800DA17E4 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 		357102B618DAA5B000DA17E4 /* VehicleService */ = {
 			isa = PBXGroup;
 			children = (
+				357102E518DAA98800DA17E4 /* background.png */,
 				357102BF18DAA5B000DA17E4 /* finalUIAppDelegate.h */,
 				357102C018DAA5B000DA17E4 /* finalUIAppDelegate.m */,
 				357102C218DAA5B000DA17E4 /* Main.storyboard */,
@@ -230,6 +233,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				357102C918DAA5B100DA17E4 /* Images.xcassets in Resources */,
+				357102E618DAA98800DA17E4 /* background.png in Resources */,
 				357102BB18DAA5B000DA17E4 /* InfoPlist.strings in Resources */,
 				357102C418DAA5B000DA17E4 /* Main.storyboard in Resources */,
 			);
