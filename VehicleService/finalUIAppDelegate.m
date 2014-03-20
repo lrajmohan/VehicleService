@@ -7,12 +7,13 @@
 //
 
 #import "finalUIAppDelegate.h"
-
+#import <GoogleMaps/GoogleMaps.h>
 @implementation finalUIAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     [self.window setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"background.png"]]];
+    [GMSServices provideAPIKey:@"AIzaSyCHdBOn1C17jO5cQvOrzutYp3rN7HAgoFo"];
     // Override point for customization after application launch.
     return YES;
 }
