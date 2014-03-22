@@ -36,6 +36,7 @@
                                                                  zoom:6];
     mapView_ = [GMSMapView mapWithFrame:CGRectZero camera:camera];
     mapView_.myLocationEnabled = YES;
+    mapView_.mapType = kGMSTypeHybrid;
     self.view = mapView_;
     
     // Creates a marker in the center of the map.
