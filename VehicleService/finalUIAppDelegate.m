@@ -8,12 +8,22 @@
 
 #import "finalUIAppDelegate.h"
 #import <GoogleMaps/GoogleMaps.h>
+#import <Parse/Parse.h>
 @implementation finalUIAppDelegate
+
+@synthesize window = _window;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    
+    //parse
+    [Parse setApplicationId:@"C1wcUhX2kRonMJasXAOTtPnx2GRjQGgcvVBjM2v6"
+                  clientKey:@"wx9ulBFuGOp756UCdeuTJ4f3RvYfmUFlYY0WKVLv"];
+    
+    //google
     [self.window setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"background.png"]]];
     [GMSServices provideAPIKey:@"AIzaSyCHdBOn1C17jO5cQvOrzutYp3rN7HAgoFo"];
+    
     // Override point for customization after application launch.
     return YES;
 }

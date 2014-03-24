@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		350008A318DD154600C8671B /* GoogleMaps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 350008A218DD154600C8671B /* GoogleMaps.framework */; };
 		350008A518DD156600C8671B /* GoogleMaps.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 350008A418DD156600C8671B /* GoogleMaps.bundle */; };
+		3546A42418DFDC5F00C8E9BA /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3546A42318DFDC5F00C8E9BA /* Accounts.framework */; };
+		3546A42818DFDE6300C8E9BA /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3546A42718DFDE6300C8E9BA /* FacebookSDK.framework */; };
 		357102B118DAA5B000DA17E4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 357102B018DAA5B000DA17E4 /* Foundation.framework */; };
 		357102B318DAA5B000DA17E4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 357102B218DAA5B000DA17E4 /* CoreGraphics.framework */; };
 		357102B518DAA5B000DA17E4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 357102B418DAA5B000DA17E4 /* UIKit.framework */; };
@@ -24,6 +26,13 @@
 		357102DA18DAA5B100DA17E4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 357102D818DAA5B100DA17E4 /* InfoPlist.strings */; };
 		357102DC18DAA5B100DA17E4 /* VehicleServiceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 357102DB18DAA5B100DA17E4 /* VehicleServiceTests.m */; };
 		357102E618DAA98800DA17E4 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 357102E518DAA98800DA17E4 /* background.png */; };
+		35DF28C618DFC9E60038D583 /* RegisterUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35DF28C518DFC9E60038D583 /* RegisterUIViewController.m */; };
+		35DF28C818DFCB0A0038D583 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35DF28C718DFCB0A0038D583 /* Parse.framework */; };
+		35DF28CE18DFCB770038D583 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35DF28C918DFCB760038D583 /* AudioToolbox.framework */; };
+		35DF28CF18DFCB770038D583 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35DF28CA18DFCB760038D583 /* CFNetwork.framework */; };
+		35DF28D018DFCB770038D583 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35DF28CB18DFCB760038D583 /* MobileCoreServices.framework */; };
+		35DF28D118DFCB770038D583 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35DF28CC18DFCB770038D583 /* Security.framework */; };
+		35DF28D218DFCB770038D583 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35DF28CD18DFCB770038D583 /* StoreKit.framework */; };
 		35E2F0FF18DB928700DB261E /* GoogleMaps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35E2F0FE18DB928700DB261E /* GoogleMaps.framework */; };
 		35E2F10118DB92AF00DB261E /* GoogleMaps.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 35E2F10018DB92AF00DB261E /* GoogleMaps.bundle */; };
 		35E2F10318DB92EF00DB261E /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35E2F10218DB92EF00DB261E /* AVFoundation.framework */; };
@@ -39,6 +48,7 @@
 		35E2F11818DB936300DB261E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35E2F11518DB936300DB261E /* QuartzCore.framework */; };
 		35E2F11918DB936300DB261E /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35E2F11618DB936300DB261E /* SystemConfiguration.framework */; };
 		35E2F11C18DB96B600DB261E /* MapUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35E2F11B18DB96B600DB261E /* MapUIViewController.m */; };
+		35EAB82618E0BEE000B7FE82 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35EAB82518E0BEE000B7FE82 /* LoginViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +64,8 @@
 /* Begin PBXFileReference section */
 		350008A218DD154600C8671B /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMaps.framework; sourceTree = "<group>"; };
 		350008A418DD156600C8671B /* GoogleMaps.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = GoogleMaps.framework/Versions/A/Resources/GoogleMaps.bundle; sourceTree = "<group>"; };
+		3546A42318DFDC5F00C8E9BA /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		3546A42718DFDE6300C8E9BA /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../../../FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
 		357102AD18DAA5B000DA17E4 /* VehicleService.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VehicleService.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		357102B018DAA5B000DA17E4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		357102B218DAA5B000DA17E4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -74,6 +86,14 @@
 		357102D918DAA5B100DA17E4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		357102DB18DAA5B100DA17E4 /* VehicleServiceTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VehicleServiceTests.m; sourceTree = "<group>"; };
 		357102E518DAA98800DA17E4 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
+		35DF28C418DFC9E60038D583 /* RegisterUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterUIViewController.h; sourceTree = "<group>"; };
+		35DF28C518DFC9E60038D583 /* RegisterUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterUIViewController.m; sourceTree = "<group>"; };
+		35DF28C718DFCB0A0038D583 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		35DF28C918DFCB760038D583 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		35DF28CA18DFCB760038D583 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		35DF28CB18DFCB760038D583 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		35DF28CC18DFCB770038D583 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		35DF28CD18DFCB770038D583 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		35E2F0FE18DB928700DB261E /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMaps.framework; sourceTree = "<group>"; };
 		35E2F10018DB92AF00DB261E /* GoogleMaps.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = GoogleMaps.framework/Versions/A/Resources/GoogleMaps.bundle; sourceTree = "<group>"; };
 		35E2F10218DB92EF00DB261E /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
@@ -90,6 +110,8 @@
 		35E2F11618DB936300DB261E /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		35E2F11A18DB96B600DB261E /* MapUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapUIViewController.h; sourceTree = "<group>"; };
 		35E2F11B18DB96B600DB261E /* MapUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapUIViewController.m; sourceTree = "<group>"; };
+		35EAB82418E0BEE000B7FE82 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		35EAB82518E0BEE000B7FE82 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,20 +119,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				35E2F11718DB936300DB261E /* OpenGLES.framework in Frameworks */,
+				3546A42418DFDC5F00C8E9BA /* Accounts.framework in Frameworks */,
+				35DF28CE18DFCB770038D583 /* AudioToolbox.framework in Frameworks */,
+				35DF28CF18DFCB770038D583 /* CFNetwork.framework in Frameworks */,
+				35DF28D018DFCB770038D583 /* MobileCoreServices.framework in Frameworks */,
+				35DF28D118DFCB770038D583 /* Security.framework in Frameworks */,
+				35DF28D218DFCB770038D583 /* StoreKit.framework in Frameworks */,
+				357102B318DAA5B000DA17E4 /* CoreGraphics.framework in Frameworks */,
+				35E2F10A18DB930E00DB261E /* CoreLocation.framework in Frameworks */,
+				35E2F11318DB934600DB261E /* libz.dylib in Frameworks */,
 				35E2F11818DB936300DB261E /* QuartzCore.framework in Frameworks */,
 				35E2F11918DB936300DB261E /* SystemConfiguration.framework in Frameworks */,
-				35E2F11318DB934600DB261E /* libz.dylib in Frameworks */,
+				35E2F11718DB936300DB261E /* OpenGLES.framework in Frameworks */,
 				35E2F11018DB933600DB261E /* libc++.dylib in Frameworks */,
 				35E2F11118DB933600DB261E /* libicucore.dylib in Frameworks */,
 				35E2F10918DB930E00DB261E /* CoreData.framework in Frameworks */,
-				35E2F10A18DB930E00DB261E /* CoreLocation.framework in Frameworks */,
 				35E2F10B18DB930E00DB261E /* CoreText.framework in Frameworks */,
 				35E2F10C18DB930E00DB261E /* GLKit.framework in Frameworks */,
+				35DF28C818DFCB0A0038D583 /* Parse.framework in Frameworks */,
 				35E2F10D18DB930E00DB261E /* ImageIO.framework in Frameworks */,
 				35E2F10318DB92EF00DB261E /* AVFoundation.framework in Frameworks */,
-				357102B318DAA5B000DA17E4 /* CoreGraphics.framework in Frameworks */,
 				357102B518DAA5B000DA17E4 /* UIKit.framework in Frameworks */,
+				3546A42818DFDE6300C8E9BA /* FacebookSDK.framework in Frameworks */,
 				350008A318DD154600C8671B /* GoogleMaps.framework in Frameworks */,
 				35E2F0FF18DB928700DB261E /* GoogleMaps.framework in Frameworks */,
 				357102B118DAA5B000DA17E4 /* Foundation.framework in Frameworks */,
@@ -133,6 +163,7 @@
 		357102A418DAA5B000DA17E4 = {
 			isa = PBXGroup;
 			children = (
+				35DF28C718DFCB0A0038D583 /* Parse.framework */,
 				357102B618DAA5B000DA17E4 /* VehicleService */,
 				357102D518DAA5B100DA17E4 /* VehicleServiceTests */,
 				357102AF18DAA5B000DA17E4 /* Frameworks */,
@@ -152,6 +183,13 @@
 		357102AF18DAA5B000DA17E4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3546A42718DFDE6300C8E9BA /* FacebookSDK.framework */,
+				3546A42318DFDC5F00C8E9BA /* Accounts.framework */,
+				35DF28C918DFCB760038D583 /* AudioToolbox.framework */,
+				35DF28CA18DFCB760038D583 /* CFNetwork.framework */,
+				35DF28CB18DFCB760038D583 /* MobileCoreServices.framework */,
+				35DF28CC18DFCB770038D583 /* Security.framework */,
+				35DF28CD18DFCB770038D583 /* StoreKit.framework */,
 				350008A418DD156600C8671B /* GoogleMaps.bundle */,
 				350008A218DD154600C8671B /* GoogleMaps.framework */,
 				35E2F11418DB936300DB261E /* OpenGLES.framework */,
@@ -183,6 +221,10 @@
 				357102BF18DAA5B000DA17E4 /* finalUIAppDelegate.h */,
 				357102C018DAA5B000DA17E4 /* finalUIAppDelegate.m */,
 				357102C218DAA5B000DA17E4 /* Main.storyboard */,
+				35EAB82418E0BEE000B7FE82 /* LoginViewController.h */,
+				35EAB82518E0BEE000B7FE82 /* LoginViewController.m */,
+				35DF28C418DFC9E60038D583 /* RegisterUIViewController.h */,
+				35DF28C518DFC9E60038D583 /* RegisterUIViewController.m */,
 				35E2F11A18DB96B600DB261E /* MapUIViewController.h */,
 				35E2F11B18DB96B600DB261E /* MapUIViewController.m */,
 				357102C518DAA5B000DA17E4 /* finalUIViewController.h */,
@@ -324,6 +366,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				357102BD18DAA5B000DA17E4 /* main.m in Sources */,
+				35DF28C618DFC9E60038D583 /* RegisterUIViewController.m in Sources */,
+				35EAB82618E0BEE000B7FE82 /* LoginViewController.m in Sources */,
 				357102C118DAA5B000DA17E4 /* finalUIAppDelegate.m in Sources */,
 				357102C718DAA5B000DA17E4 /* finalUIViewController.m in Sources */,
 				35E2F11C18DB96B600DB261E /* MapUIViewController.m in Sources */,
@@ -457,6 +501,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/Raj/Documents/Independant\\ study/vehicleservice/VehicleService",
+					/Users/Raj/Documents/FacebookSDK,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "VehicleService/VehicleService-Prefix.pch";
@@ -474,6 +519,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/Raj/Documents/Independant\\ study/vehicleservice/VehicleService",
+					/Users/Raj/Documents/FacebookSDK,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "VehicleService/VehicleService-Prefix.pch";
