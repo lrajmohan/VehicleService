@@ -49,6 +49,7 @@
 		35E2F11918DB936300DB261E /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35E2F11618DB936300DB261E /* SystemConfiguration.framework */; };
 		35E2F11C18DB96B600DB261E /* MapUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35E2F11B18DB96B600DB261E /* MapUIViewController.m */; };
 		35EAB82618E0BEE000B7FE82 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35EAB82518E0BEE000B7FE82 /* LoginViewController.m */; };
+		35EAB82918E0EC6300B7FE82 /* mycarsUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35EAB82818E0EC6300B7FE82 /* mycarsUIViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -112,6 +113,8 @@
 		35E2F11B18DB96B600DB261E /* MapUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapUIViewController.m; sourceTree = "<group>"; };
 		35EAB82418E0BEE000B7FE82 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		35EAB82518E0BEE000B7FE82 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		35EAB82718E0EC6200B7FE82 /* mycarsUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mycarsUIViewController.h; sourceTree = "<group>"; };
+		35EAB82818E0EC6300B7FE82 /* mycarsUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mycarsUIViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -221,6 +224,8 @@
 				357102BF18DAA5B000DA17E4 /* finalUIAppDelegate.h */,
 				357102C018DAA5B000DA17E4 /* finalUIAppDelegate.m */,
 				357102C218DAA5B000DA17E4 /* Main.storyboard */,
+				35EAB82718E0EC6200B7FE82 /* mycarsUIViewController.h */,
+				35EAB82818E0EC6300B7FE82 /* mycarsUIViewController.m */,
 				35EAB82418E0BEE000B7FE82 /* LoginViewController.h */,
 				35EAB82518E0BEE000B7FE82 /* LoginViewController.m */,
 				35DF28C418DFC9E60038D583 /* RegisterUIViewController.h */,
@@ -370,6 +375,7 @@
 				35EAB82618E0BEE000B7FE82 /* LoginViewController.m in Sources */,
 				357102C118DAA5B000DA17E4 /* finalUIAppDelegate.m in Sources */,
 				357102C718DAA5B000DA17E4 /* finalUIViewController.m in Sources */,
+				35EAB82918E0EC6300B7FE82 /* mycarsUIViewController.m in Sources */,
 				35E2F11C18DB96B600DB261E /* MapUIViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
