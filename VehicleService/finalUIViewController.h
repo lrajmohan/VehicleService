@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <Parse/Parse.h>
 
 @interface finalUIViewController : UIViewController
+
+- (IBAction)Logout:(id)sender;
 
 @end

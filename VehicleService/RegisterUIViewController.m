@@ -32,7 +32,9 @@
     self.emailField.delegate = self;
     self.passwordField.delegate = self;
     self.confirmpasswordField.delegate = self;
-
+    self.loginUsernameField.delegate = self;
+    self.loginPasswordField.delegate = self;
+    
 	// Do any additional setup after loading the view.
 }
 
@@ -54,6 +56,12 @@
 
 - (IBAction)SubmitButton:(id)sender {
             [self checkFieldsComplete];
+}
+
+- (IBAction)alreadyRegistered:(id)sender {
+    [UIView animateWithDuration:0.02 animations:^{
+        _loginViewOutlet.frame = self.view.frame;
+    }];
 }
 
 - (void) checkFieldsComplete
@@ -105,5 +113,21 @@
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
     [textField resignFirstResponder];
     return NO;
+}
+- (IBAction)loginbuttonField:(id)sender {
+    [PFUser logInWithUsernameInBackground:_loginUsernameField.text password:_loginPasswordField.text block:^(PFUser *user, NSError *error) {
+        if(!error)
+        {
+            NSLog(@"userlog");
+            [self performSegueWithIdentifier:@"signupSuccessful" sender:self];
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Congrats!" message: @"login successful"  delegate:nil cancelButtonTitle:@"OKay" otherButtonTitles:nil];
+            [alert show];
+        }
+        if (error) {
+            
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Sorry!" message: @"login Unsuccessful"  delegate:nil cancelButtonTitle:@"OKay" otherButtonTitles:nil];
+            [alert show];
+        }
+    }];
 }
 @end

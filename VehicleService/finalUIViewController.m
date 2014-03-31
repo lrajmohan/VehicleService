@@ -28,4 +28,8 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)Logout:(id)sender {
+    [PFUser logOut];
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
 @end
