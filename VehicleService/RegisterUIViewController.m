@@ -40,6 +40,7 @@
 - (void) viewDidAppear:(BOOL)animated
 {
         PFUser *newUser = [PFUser user];
+    
     if (newUser.username !=NULL) {
         [self performSegueWithIdentifier:@"signupSuccessful" sender:self];
     }
@@ -87,9 +88,9 @@
     [newUser signUpInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
         if (!error) {
             [self performSegueWithIdentifier:@"signupSuccessful" sender:self];
-            /*NSLog(@"Welcome to vehicle service app");
+            //NSLog(@"Welcome to vehicle service app");
             UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Welcome" message: _usernameField.text delegate:nil cancelButtonTitle:@"OKay" otherButtonTitles:nil];
-            [alert show]; */
+            [alert show];
             
         }
         else{

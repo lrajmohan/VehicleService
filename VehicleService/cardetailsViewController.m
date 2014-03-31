@@ -1,18 +1,18 @@
 //
-//  mycarsUIViewController.m
+//  cardetailsViewController.m
 //  VehicleService
 //
-//  Created by Rajmohan Loganathan on 3/24/14.
+//  Created by Rajmohan Loganathan on 3/25/14.
 //  Copyright (c) 2014 Rajmohan Loganathan. All rights reserved.
 //
 
-#import "mycarsUIViewController.h"
+#import "cardetailsViewController.h"
 
-@interface mycarsUIViewController ()
+@interface cardetailsViewController ()
 
 @end
 
-@implementation mycarsUIViewController
+@implementation cardetailsViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {

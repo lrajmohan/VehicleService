@@ -46,6 +46,12 @@
     marker.snippet = @"Australia";
     marker.map = mapView_;
     //map code ends
+    //button
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    button.frame = CGRectMake(mapView_.bounds.size.width - 110, mapView_.bounds.size.height - 30, 100, 20);
+    button.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleTopMargin;
+    [button setTitle:@"home" forState:UIControlStateNormal];
+    [mapView_ addSubview:button];
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
 }

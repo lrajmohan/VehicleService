@@ -36,7 +36,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="irv-0V-25J" kind="modal" id="sMl-ux-bwX"/>
+                                    <segue destination="2u0-W8-ahK" kind="modal" id="e4j-id-f2J"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hHL-e8-8jQ">
@@ -72,7 +72,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="666" y="-225"/>
+            <point key="canvasLocation" x="916" y="-299"/>
         </scene>
         <!--Table View Controller - My cars-->
         <scene sceneID="lep-FU-hxY">
@@ -92,6 +92,10 @@
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="8iK-Rh-KID" id="kqB-sN-EEp"/>
+                            <outlet property="delegate" destination="8iK-Rh-KID" id="hm5-3k-Kuw"/>
+                        </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="My cars" id="MJh-EA-QaO">
                         <barButtonItem key="leftBarButtonItem" title="Home" id="qXf-iv-uZh">
@@ -108,7 +112,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oTw-Sc-enP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1416" y="466"/>
+            <point key="canvasLocation" x="1375" y="414"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="eaF-2g-IuQ">
@@ -123,7 +127,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HHW-BP-3c4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="862" y="224"/>
+            <point key="canvasLocation" x="542" y="316"/>
         </scene>
         <!--map-->
         <scene sceneID="JDf-Oh-wC6">
@@ -138,13 +142,13 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Title" id="AYR-PU-xVs">
+                    <navigationItem key="navigationItem" title="Stores around me" id="AYR-PU-xVs">
                         <barButtonItem key="backBarButtonItem" title="back" id="iSh-r5-3JB"/>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fKX-qS-LlF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1871" y="-299"/>
+            <point key="canvasLocation" x="1354" y="-299"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="uNe-H7-IqN">
@@ -199,10 +203,10 @@
             </objects>
             <point key="canvasLocation" x="40" y="426"/>
         </scene>
-        <!--View Controller-->
+        <!--My Car View Controller-->
         <scene sceneID="JFO-DL-hXQ">
             <objects>
-                <viewController id="u14-ty-q93" sceneMemberID="viewController">
+                <viewController id="u14-ty-q93" customClass="myCarViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="S8L-6H-W3o"/>
                         <viewControllerLayoutGuide type="bottom" id="Lxo-oh-35J"/>
@@ -253,6 +257,9 @@
                                 <state key="normal" title="Submit">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="submitAction:" destination="u14-ty-q93" eventType="touchUpInside" id="6n7-mf-ZuG"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -260,10 +267,18 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="vPT-yH-fOk"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="licenseField" destination="nd9-nG-R07" id="Ed2-L9-Dnh"/>
+                        <outlet property="makeField" destination="Odr-Zj-dzP" id="ggg-MA-Gi4"/>
+                        <outlet property="mileageField" destination="MAv-nK-UUS" id="w37-K3-D1k"/>
+                        <outlet property="modelField" destination="vFf-xQ-Ucu" id="IZZ-aA-Rlu"/>
+                        <outlet property="yearField" destination="yxW-MU-LT9" id="7M4-sx-KpQ"/>
+                        <outlet property="yearlymileageField" destination="el4-nZ-Iko" id="jbk-Zs-40t"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x2n-5h-qH2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1772" y="400"/>
+            <point key="canvasLocation" x="1888" y="414"/>
         </scene>
         <!--RegisterUI View Controller - register-->
         <scene sceneID="WFz-8B-waT">
@@ -326,25 +341,6 @@
             </objects>
             <point key="canvasLocation" x="792" y="907"/>
         </scene>
-        <!--Navigation Controller - Item-->
-        <scene sceneID="mSM-un-Ekg">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="irv-0V-25J" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="W5d-va-a2e"/>
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="b7W-i0-mb9">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="2u0-W8-ahK" kind="relationship" relationship="rootViewController" id="sHq-El-MQx"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="FyS-sN-hW8" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1345" y="-299"/>
-        </scene>
     </scenes>
     <resources>
         <image name="background.png" width="2560" height="1600"/>
@@ -355,6 +351,6 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="6Zq-Iv-sPY"/>
+        <segue reference="AIe-Ig-JSD"/>
     </inferredMetricsTieBreakers>
 </document>

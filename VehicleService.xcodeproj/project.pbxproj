@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		350008A318DD154600C8671B /* GoogleMaps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 350008A218DD154600C8671B /* GoogleMaps.framework */; };
 		350008A518DD156600C8671B /* GoogleMaps.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 350008A418DD156600C8671B /* GoogleMaps.bundle */; };
+		351B598618E1FC8600484088 /* cardetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 351B598518E1FC8600484088 /* cardetailsViewController.m */; };
 		3546A42418DFDC5F00C8E9BA /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3546A42318DFDC5F00C8E9BA /* Accounts.framework */; };
 		3546A42818DFDE6300C8E9BA /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3546A42718DFDE6300C8E9BA /* FacebookSDK.framework */; };
 		357102B118DAA5B000DA17E4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 357102B018DAA5B000DA17E4 /* Foundation.framework */; };
@@ -49,7 +50,7 @@
 		35E2F11918DB936300DB261E /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35E2F11618DB936300DB261E /* SystemConfiguration.framework */; };
 		35E2F11C18DB96B600DB261E /* MapUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35E2F11B18DB96B600DB261E /* MapUIViewController.m */; };
 		35EAB82618E0BEE000B7FE82 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35EAB82518E0BEE000B7FE82 /* LoginViewController.m */; };
-		35EAB82918E0EC6300B7FE82 /* mycarsUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35EAB82818E0EC6300B7FE82 /* mycarsUIViewController.m */; };
+		35EAB82C18E171B600B7FE82 /* myCarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35EAB82B18E171B600B7FE82 /* myCarViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,8 @@
 /* Begin PBXFileReference section */
 		350008A218DD154600C8671B /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMaps.framework; sourceTree = "<group>"; };
 		350008A418DD156600C8671B /* GoogleMaps.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = GoogleMaps.framework/Versions/A/Resources/GoogleMaps.bundle; sourceTree = "<group>"; };
+		351B598418E1FC8600484088 /* cardetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cardetailsViewController.h; sourceTree = "<group>"; };
+		351B598518E1FC8600484088 /* cardetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = cardetailsViewController.m; sourceTree = "<group>"; };
 		3546A42318DFDC5F00C8E9BA /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		3546A42718DFDE6300C8E9BA /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../../../FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
 		357102AD18DAA5B000DA17E4 /* VehicleService.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VehicleService.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -113,8 +116,8 @@
 		35E2F11B18DB96B600DB261E /* MapUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapUIViewController.m; sourceTree = "<group>"; };
 		35EAB82418E0BEE000B7FE82 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		35EAB82518E0BEE000B7FE82 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
-		35EAB82718E0EC6200B7FE82 /* mycarsUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mycarsUIViewController.h; sourceTree = "<group>"; };
-		35EAB82818E0EC6300B7FE82 /* mycarsUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mycarsUIViewController.m; sourceTree = "<group>"; };
+		35EAB82A18E171B600B7FE82 /* myCarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = myCarViewController.h; sourceTree = "<group>"; };
+		35EAB82B18E171B600B7FE82 /* myCarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = myCarViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -224,8 +227,10 @@
 				357102BF18DAA5B000DA17E4 /* finalUIAppDelegate.h */,
 				357102C018DAA5B000DA17E4 /* finalUIAppDelegate.m */,
 				357102C218DAA5B000DA17E4 /* Main.storyboard */,
-				35EAB82718E0EC6200B7FE82 /* mycarsUIViewController.h */,
-				35EAB82818E0EC6300B7FE82 /* mycarsUIViewController.m */,
+				351B598418E1FC8600484088 /* cardetailsViewController.h */,
+				351B598518E1FC8600484088 /* cardetailsViewController.m */,
+				35EAB82A18E171B600B7FE82 /* myCarViewController.h */,
+				35EAB82B18E171B600B7FE82 /* myCarViewController.m */,
 				35EAB82418E0BEE000B7FE82 /* LoginViewController.h */,
 				35EAB82518E0BEE000B7FE82 /* LoginViewController.m */,
 				35DF28C418DFC9E60038D583 /* RegisterUIViewController.h */,
@@ -370,12 +375,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				351B598618E1FC8600484088 /* cardetailsViewController.m in Sources */,
 				357102BD18DAA5B000DA17E4 /* main.m in Sources */,
 				35DF28C618DFC9E60038D583 /* RegisterUIViewController.m in Sources */,
 				35EAB82618E0BEE000B7FE82 /* LoginViewController.m in Sources */,
+				35EAB82C18E171B600B7FE82 /* myCarViewController.m in Sources */,
 				357102C118DAA5B000DA17E4 /* finalUIAppDelegate.m in Sources */,
 				357102C718DAA5B000DA17E4 /* finalUIViewController.m in Sources */,
-				35EAB82918E0EC6300B7FE82 /* mycarsUIViewController.m in Sources */,
 				35E2F11C18DB96B600DB261E /* MapUIViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
