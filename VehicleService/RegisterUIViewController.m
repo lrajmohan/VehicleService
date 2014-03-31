@@ -41,7 +41,7 @@
 //to keep the user logged in until he logs off
 - (void) viewDidAppear:(BOOL)animated
 {
-        PFUser *newUser = [PFUser user];
+        PFUser *newUser = [PFUser currentUser];
     
     if (newUser.username !=NULL) {
         [self performSegueWithIdentifier:@"signupSuccessful" sender:self];
@@ -95,6 +95,14 @@
     
     [newUser signUpInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
         if (!error) {
+            _loginUsernameField.text = nil;
+            _loginPasswordField.text = nil;
+            _usernameField.text = nil;
+            _emailField.text = nil;
+            _passwordField.text = nil;
+            _confirmpasswordField.text = nil;
+            _loginUsernameField.text = nil;
+            _loginPasswordField.text = nil;
             [self performSegueWithIdentifier:@"signupSuccessful" sender:self];
             //NSLog(@"Welcome to vehicle service app");
             UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Welcome" message: _usernameField.text delegate:nil cancelButtonTitle:@"OKay" otherButtonTitles:nil];
@@ -119,6 +127,16 @@
         if(!error)
         {
             NSLog(@"userlog");
+            _loginUsernameField.text = nil;
+            _loginPasswordField.text = nil;
+            _usernameField.text = nil;
+            _emailField.text = nil;
+            _passwordField.text = nil;
+            _confirmpasswordField.text = nil;
+            _loginUsernameField.text = nil;
+            _loginPasswordField.text = nil;
+            
+
             [self performSegueWithIdentifier:@"signupSuccessful" sender:self];
             UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Congrats!" message: @"login successful"  delegate:nil cancelButtonTitle:@"OKay" otherButtonTitles:nil];
             [alert show];
