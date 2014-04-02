@@ -6,7 +6,6 @@
 //  Copyright (c) 2014 Rajmohan Loganathan. All rights reserved.
 //
 
-
 #import "MapUIViewController.h"
 #import <GoogleMaps/GoogleMaps.h>
 

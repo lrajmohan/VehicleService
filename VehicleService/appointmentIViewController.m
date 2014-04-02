@@ -51,7 +51,7 @@
     NSString *dateString = [outputFormatterTime stringFromDate:self.datePicker.date];
     //[outputFormatter release];
     
- //   NSString *datestring = [[NSString alloc] initWithFormat:@"%@", selectedDate];
+    NSString *datestring = [[NSString alloc] initWithFormat:@"%@", selectedDate];
     
     NSArray *components = [dateString componentsSeparatedByString:@"at"];
     NSString *date = components[0];
@@ -61,32 +61,34 @@
     
     [alert show];
 //}
-
+    
 //storing the date and time fields
 ///- (void) storeDateAndTime
 //{
-    PFObject *appointment = [PFObject objectWithClassName: @"appointment"];
-    [appointment setObject:date forKey:@"date"];
- 
-     [appointment setObject:time forKey:@"time"];
     
+PFObject *appointment = [PFObject objectWithClassName: @"appointment"];
+[appointment setObject:date forKey:@"date"];
+
+[appointment setObject:time forKey:@"time"];
+
+
+// Upload car details to Parse
+[appointment saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
     
-    // Upload car details to Parse
-    [appointment saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+    if (!error) {
+        // Show success message
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Upload Complete" message:@"Successfully saved the appointment" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+        [alert show];
         
-        if (!error) {
-            // Show success message
-            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Upload Complete" message:@"Successfully saved the appointment" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
-            [alert show];
-            
-            
-            
-        } else {
-            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Upload Failure" message:[error localizedDescription] delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
-            [alert show];
-            
-        }
         
-    }];
+        
+    } else {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Upload Failure" message:[error localizedDescription] delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+        [alert show];
+        
+    }
+    
+}];
 }
+
 @end
