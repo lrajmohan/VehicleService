@@ -51,6 +51,7 @@
 		35E2F11C18DB96B600DB261E /* MapUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35E2F11B18DB96B600DB261E /* MapUIViewController.m */; };
 		35EAB82618E0BEE000B7FE82 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35EAB82518E0BEE000B7FE82 /* LoginViewController.m */; };
 		35EAB82C18E171B600B7FE82 /* myCarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35EAB82B18E171B600B7FE82 /* myCarViewController.m */; };
+		35FED60F18EBAB3E00DCF8FA /* appointmentIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35FED60E18EBAB3E00DCF8FA /* appointmentIViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -118,6 +119,8 @@
 		35EAB82518E0BEE000B7FE82 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		35EAB82A18E171B600B7FE82 /* myCarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = myCarViewController.h; sourceTree = "<group>"; };
 		35EAB82B18E171B600B7FE82 /* myCarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = myCarViewController.m; sourceTree = "<group>"; };
+		35FED60D18EBAB3E00DCF8FA /* appointmentIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = appointmentIViewController.h; sourceTree = "<group>"; };
+		35FED60E18EBAB3E00DCF8FA /* appointmentIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = appointmentIViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -239,6 +242,8 @@
 				35E2F11B18DB96B600DB261E /* MapUIViewController.m */,
 				357102C518DAA5B000DA17E4 /* finalUIViewController.h */,
 				357102C618DAA5B000DA17E4 /* finalUIViewController.m */,
+				35FED60D18EBAB3E00DCF8FA /* appointmentIViewController.h */,
+				35FED60E18EBAB3E00DCF8FA /* appointmentIViewController.m */,
 				357102C818DAA5B100DA17E4 /* Images.xcassets */,
 				357102B718DAA5B000DA17E4 /* Supporting Files */,
 			);
@@ -376,6 +381,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				351B598618E1FC8600484088 /* cardetailsViewController.m in Sources */,
+				35FED60F18EBAB3E00DCF8FA /* appointmentIViewController.m in Sources */,
 				357102BD18DAA5B000DA17E4 /* main.m in Sources */,
 				35DF28C618DFC9E60038D583 /* RegisterUIViewController.m in Sources */,
 				35EAB82618E0BEE000B7FE82 /* LoginViewController.m in Sources */,
