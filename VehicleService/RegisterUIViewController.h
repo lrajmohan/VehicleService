@@ -8,8 +8,9 @@
 
 #import "finalUIViewController.h"
 #import <Parse/Parse.h>
+#import "appointmentIViewController.h"
 
-@interface RegisterUIViewController : finalUIViewController
+@interface RegisterUIViewController : UIViewController<UITextFieldDelegate>
 @property (weak, nonatomic) IBOutlet UITextField *usernameField;
 @property (weak, nonatomic) IBOutlet UITextField *emailField;
 @property (weak, nonatomic) IBOutlet UITextField *passwordField;

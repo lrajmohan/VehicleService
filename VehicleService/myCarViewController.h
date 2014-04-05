@@ -8,7 +8,7 @@
 
 #import "finalUIViewController.h"
 #import <Parse/Parse.h>
-@interface myCarViewController : finalUIViewController
+@interface myCarViewController : finalUIViewController<UITextFieldDelegate>
 
 @property (weak, nonatomic) IBOutlet UITextField *makeField;
 @property (weak, nonatomic) IBOutlet UITextField *modelField;

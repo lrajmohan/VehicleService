@@ -117,11 +117,7 @@
     }];
  }
 
-// keyboard return
-- (BOOL)textFieldShouldReturn:(UITextField *)textField {
-    [textField resignFirstResponder];
-    return NO;
-}
+
 - (IBAction)loginbuttonField:(id)sender {
     [PFUser logInWithUsernameInBackground:_loginUsernameField.text password:_loginPasswordField.text block:^(PFUser *user, NSError *error) {
         if(!error)
@@ -136,7 +132,6 @@
             _loginUsernameField.text = nil;
             _loginPasswordField.text = nil;
             
-
             [self performSegueWithIdentifier:@"signupSuccessful" sender:self];
             UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Congrats!" message: @"login successful"  delegate:nil cancelButtonTitle:@"OKay" otherButtonTitles:nil];
             [alert show];
@@ -147,5 +142,12 @@
             [alert show];
         }
     }];
+    
+    
+}
+// keyboard return
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+    [textField resignFirstResponder];
+    return NO;
 }
 @end

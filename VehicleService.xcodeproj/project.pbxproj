@@ -12,6 +12,7 @@
 		351B598618E1FC8600484088 /* cardetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 351B598518E1FC8600484088 /* cardetailsViewController.m */; };
 		3546A42418DFDC5F00C8E9BA /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3546A42318DFDC5F00C8E9BA /* Accounts.framework */; };
 		3546A42818DFDE6300C8E9BA /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3546A42718DFDE6300C8E9BA /* FacebookSDK.framework */; };
+		3560F82918ECCA4D004F4777 /* ProviderRegisterationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3560F82818ECCA4D004F4777 /* ProviderRegisterationViewController.m */; };
 		357102B118DAA5B000DA17E4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 357102B018DAA5B000DA17E4 /* Foundation.framework */; };
 		357102B318DAA5B000DA17E4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 357102B218DAA5B000DA17E4 /* CoreGraphics.framework */; };
 		357102B518DAA5B000DA17E4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 357102B418DAA5B000DA17E4 /* UIKit.framework */; };
@@ -71,6 +72,8 @@
 		351B598518E1FC8600484088 /* cardetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = cardetailsViewController.m; sourceTree = "<group>"; };
 		3546A42318DFDC5F00C8E9BA /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		3546A42718DFDE6300C8E9BA /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../../../FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
+		3560F82718ECCA4D004F4777 /* ProviderRegisterationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProviderRegisterationViewController.h; sourceTree = "<group>"; };
+		3560F82818ECCA4D004F4777 /* ProviderRegisterationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProviderRegisterationViewController.m; sourceTree = "<group>"; };
 		357102AD18DAA5B000DA17E4 /* VehicleService.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VehicleService.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		357102B018DAA5B000DA17E4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		357102B218DAA5B000DA17E4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -238,6 +241,8 @@
 				35EAB82518E0BEE000B7FE82 /* LoginViewController.m */,
 				35DF28C418DFC9E60038D583 /* RegisterUIViewController.h */,
 				35DF28C518DFC9E60038D583 /* RegisterUIViewController.m */,
+				3560F82718ECCA4D004F4777 /* ProviderRegisterationViewController.h */,
+				3560F82818ECCA4D004F4777 /* ProviderRegisterationViewController.m */,
 				35E2F11A18DB96B600DB261E /* MapUIViewController.h */,
 				35E2F11B18DB96B600DB261E /* MapUIViewController.m */,
 				357102C518DAA5B000DA17E4 /* finalUIViewController.h */,
@@ -382,6 +387,7 @@
 			files = (
 				351B598618E1FC8600484088 /* cardetailsViewController.m in Sources */,
 				35FED60F18EBAB3E00DCF8FA /* appointmentIViewController.m in Sources */,
+				3560F82918ECCA4D004F4777 /* ProviderRegisterationViewController.m in Sources */,
 				357102BD18DAA5B000DA17E4 /* main.m in Sources */,
 				35DF28C618DFC9E60038D583 /* RegisterUIViewController.m in Sources */,
 				35EAB82618E0BEE000B7FE82 /* LoginViewController.m in Sources */,
