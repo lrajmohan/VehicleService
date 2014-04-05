@@ -7,7 +7,7 @@
 //
 
 #import "finalUIViewController.h"
-
+#import <Parse/Parse.h>
 @interface appointmentIViewController : finalUIViewController
 @property (weak, nonatomic) IBOutlet UIDatePicker *datePicker;
 - (IBAction)submitDate:(id)sender;

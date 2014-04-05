@@ -382,6 +382,12 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="companyname" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bVg-5L-ApQ">
+                                <rect key="frame" x="83" y="267" width="154" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7Fs-2c-wI3">
                                 <rect key="frame" x="83" y="207" width="154" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -412,6 +418,9 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="providerAlreadySigned:" destination="j2o-TV-V6a" eventType="touchUpInside" id="XWa-LR-T6c"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome Provider" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tZI-i5-tGA">
                                 <rect key="frame" x="93" y="91" width="140" height="21"/>
@@ -419,20 +428,80 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qE8-Xe-A0g">
+                                <rect key="frame" x="320" y="65" width="320" height="516"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wKg-Mq-cx6">
+                                        <rect key="frame" x="97" y="158" width="126" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aQh-o7-bJ4">
+                                        <rect key="frame" x="97" y="214" width="126" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2ft-00-ewH">
+                                        <rect key="frame" x="126" y="296" width="58" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="login" backgroundImage="background.png">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="loginbuttonField:" destination="Bw1-fO-S19" eventType="touchUpInside" id="796-gh-dUG"/>
+                                            <action selector="providerSignIn:" destination="j2o-TV-V6a" eventType="touchUpInside" id="cud-3v-GnC"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome Provider" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nFL-ud-CbP">
+                                        <rect key="frame" x="97" y="74" width="140" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Register/Login" id="RHH-EB-xNb"/>
                     <connections>
-                        <outlet property="providerConfirmPassword" destination="2LR-xM-8Qf" id="Uip-tr-9DW"/>
+                        <outlet property="providerCompanyName" destination="bVg-5L-ApQ" id="WnV-Dv-ZkQ"/>
+                        <outlet property="providerConfirmPassword" destination="2LR-xM-8Qf" id="m1Q-kt-Tlj"/>
                         <outlet property="providerEmailId" destination="1o1-W2-GE3" id="xnB-il-1gB"/>
-                        <outlet property="providerPassword" destination="2LR-xM-8Qf" id="ftc-hE-AYi"/>
-                        <outlet property="providerUsername" destination="2MB-5F-QaO" id="FfS-QB-Uh9"/>
+                        <outlet property="providerPassword" destination="7Fs-2c-wI3" id="JSu-b7-APK"/>
+                        <outlet property="providerSignInPassword" destination="aQh-o7-bJ4" id="dn7-qI-Isl"/>
+                        <outlet property="providerSignInUsername" destination="wKg-Mq-cx6" id="F7a-Mw-goe"/>
+                        <outlet property="providerUsername" destination="2MB-5F-QaO" id="YUb-gR-opv"/>
+                        <outlet property="signInView" destination="qE8-Xe-A0g" id="kCG-LV-qxN"/>
+                        <segue destination="7dP-RF-Ka4" kind="modal" identifier="providerSignupSuccessful" id="SSj-sg-PnC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5yI-dp-ul8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="509" y="501"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="bgY-z9-59o">
+            <objects>
+                <viewController id="7dP-RF-Ka4" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="C04-Hs-s5z"/>
+                        <viewControllerLayoutGuide type="bottom" id="T2m-dV-3UM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="WJE-a5-wuD">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ru5-6i-fJV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="881" y="778"/>
         </scene>
         <!--RegisterUI View Controller - register-->
         <scene sceneID="WFz-8B-waT">
@@ -595,6 +664,6 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="AIe-Ig-JSD"/>
-        <segue reference="3aJ-4P-mre"/>
+        <segue reference="XvX-8a-P1o"/>
     </inferredMetricsTieBreakers>
 </document>

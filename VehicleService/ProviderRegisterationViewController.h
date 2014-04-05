@@ -8,11 +8,27 @@
 
 #import "finalUIViewController.h"
 
-@interface ProviderRegisterationViewController : UIViewController
+@interface ProviderRegisterationViewController : UIViewController<UITextFieldDelegate>
+//sign up
 @property (weak, nonatomic) IBOutlet UITextField *providerUsername;
 @property (weak, nonatomic) IBOutlet UITextField *providerEmailId;
 @property (weak, nonatomic) IBOutlet UITextField *providerPassword;
 @property (weak, nonatomic) IBOutlet UITextField *providerConfirmPassword;
+@property (weak, nonatomic) IBOutlet UITextField *providerCompanyName;
+
+
 
 - (IBAction)providerSignUp:(id)sender;
+- (IBAction)providerAlreadySigned:(id)sender;
+
+//login view
+
+@property (weak, nonatomic) IBOutlet UIView *signInView;
+
+//sign in
+@property (weak, nonatomic) IBOutlet UITextField *providerSignInUsername;
+@property (weak, nonatomic) IBOutlet UITextField *providerSignInPassword;
+
+- (IBAction)providerSignIn:(id)sender;
+
 @end

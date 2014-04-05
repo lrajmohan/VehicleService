@@ -40,7 +40,7 @@
 
 - (IBAction)submitDate:(id)sender {
     
-    NSDate *selectedDate = [_datePicker date];
+ //   NSDate *selectedDate = [_datePicker date];
     
    // NSDateFormatter *outputFormatterDate = [[NSDateFormatter alloc] init];
    // [outputFormatterDate setDateFormat:@"yyyy-MM-dd"]; //24hr time format
@@ -51,7 +51,7 @@
     NSString *dateString = [outputFormatterTime stringFromDate:self.datePicker.date];
     //[outputFormatter release];
     
-    NSString *datestring = [[NSString alloc] initWithFormat:@"%@", selectedDate];
+  //  NSString *datestring = [[NSString alloc] initWithFormat:@"%@", selectedDate];
     
     NSArray *components = [dateString componentsSeparatedByString:@"at"];
     NSString *date = components[0];
@@ -65,12 +65,16 @@
 //storing the date and time fields
 ///- (void) storeDateAndTime
 //{
-    
+
+//current user and his vehicle info
+PFUser *user = [PFUser currentUser];
+    //adding appointment object
 PFObject *appointment = [PFObject objectWithClassName: @"appointment"];
 [appointment setObject:date forKey:@"date"];
-
 [appointment setObject:time forKey:@"time"];
-
+//saving the user along with the values
+appointment[@"user"] = user;
+[appointment save];
 
 // Upload car details to Parse
 [appointment saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {

@@ -62,17 +62,21 @@
 
 - (void) createvehicle
 {
+    //current user and his vehicle info
+    PFUser *user = [PFUser currentUser];
     PFObject *car = [PFObject objectWithClassName: @"car"];
     [car setObject:_modelField.text forKey:@"name"];
     [car setObject:_makeField.text forKey:@"make"];
     [car setObject:_licenseField.text forKey:@"licenseno"];
     [car setObject:_yearField.text forKey:@"yearofmanf"];
     [car setObject:_yearlymileageField.text forKey:@"yearlymileage"];
-    [car setObject:_mileageField.text forKey:@"mileage"];
+    [car setObject:_mileageField.text forKey:@"mileages"];
+    //saving the user along with the values
+    car[@"user"] = user;
+    [car save];
 
 
  
-    
     // Upload car details to Parse
     [car saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
         

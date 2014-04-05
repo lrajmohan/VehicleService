@@ -43,7 +43,7 @@
 {
         PFUser *newUser = [PFUser currentUser];
     
-    if (newUser.username !=NULL) {
+    if (newUser.username !=NULL && [newUser[@"usertype"]  isEqual: @"user"]) {
         [self performSegueWithIdentifier:@"signupSuccessful" sender:self];
     }
 }
@@ -92,6 +92,7 @@
     newUser.username = _usernameField.text;
     newUser.email = _emailField.text;
     newUser.password = _passwordField.text;
+    newUser[@"usertype"] = @"user";
     
     [newUser signUpInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
         if (!error) {
