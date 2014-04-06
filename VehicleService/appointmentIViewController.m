@@ -40,7 +40,7 @@
 
 - (IBAction)submitDate:(id)sender {
     
- //   NSDate *selectedDate = [_datePicker date];
+    NSDate *selectedDate = [_datePicker date];
     
    // NSDateFormatter *outputFormatterDate = [[NSDateFormatter alloc] init];
    // [outputFormatterDate setDateFormat:@"yyyy-MM-dd"]; //24hr time format
@@ -72,6 +72,7 @@ PFUser *user = [PFUser currentUser];
 PFObject *appointment = [PFObject objectWithClassName: @"appointment"];
 [appointment setObject:date forKey:@"date"];
 [appointment setObject:time forKey:@"time"];
+    [appointment setObject:selectedDate forKey:@"datetime"];
 //saving the user along with the values
 appointment[@"user"] = user;
 [appointment save];

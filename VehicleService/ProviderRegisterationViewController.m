@@ -119,6 +119,29 @@
 
 
 - (IBAction)providerSignIn:(id)sender {
+    [PFUser logInWithUsernameInBackground:_providerSignInUsername.text password:_providerSignInPassword.text block:^(PFUser *user, NSError *error) {
+        if(!error && [user[@"usertype"]  isEqual: @"provider"])
+        {
+            NSLog(@"userlog");
+            _providerUsername.text = nil;
+            _providerPassword.text = nil;
+            _providerConfirmPassword.text = nil;
+            _providerEmailId.text = nil;
+            _providerSignInUsername.text = nil;
+            _providerSignInPassword.text = nil;
+            
+            
+            [self performSegueWithIdentifier:@"providerSignupSuccessful" sender:self];
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Congrats!" message: @"login successful"  delegate:nil cancelButtonTitle:@"OKay" otherButtonTitles:nil];
+            [alert show];
+        }
+        if (error) {
+            
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Sorry!" message: @"login Unsuccessful"  delegate:nil cancelButtonTitle:@"OKay" otherButtonTitles:nil];
+            [alert show];
+        }
+    }];
+    
 }
 
 // keyboard return

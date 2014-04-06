@@ -121,7 +121,7 @@
 
 - (IBAction)loginbuttonField:(id)sender {
     [PFUser logInWithUsernameInBackground:_loginUsernameField.text password:_loginPasswordField.text block:^(PFUser *user, NSError *error) {
-        if(!error)
+        if(!error && [user[@"usertype"]  isEqual: @"user"])
         {
             NSLog(@"userlog");
             _loginUsernameField.text = nil;
