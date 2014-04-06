@@ -41,6 +41,24 @@
 
 - (void)dothis
 {
+    //get the schedules from current time + 4 hrs(minimum time to pickup)
+    PFQuery *query = [PFQuery queryWithClassName:@"appointment"];
+    [query whereKey:@"datetime" greaterThanOrEqualTo:[NSDate date]];
+    [query orderByAscending:@"datetime"];
+    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+        if (!error) {
+            //  find succeeded objects
+            NSLog(@"Successfully retrieved %d scores.", objects.count);
+            // Do something with the found objects
+            for (PFObject *object in objects) {
+                NSLog(@"%@", object.objectId);
+            }
+        } else {
+            // Log details of the failure
+            NSLog(@"Error: %@ %@", error, [error userInfo]);
+        }
+    }];
+    
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Sorry!" message: @"will do it "  delegate:nil cancelButtonTitle:@"OKay" otherButtonTitles:nil];
     [alert show];
 }

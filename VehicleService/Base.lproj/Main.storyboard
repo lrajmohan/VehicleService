@@ -29,7 +29,6 @@
                                 </state>
                                 <connections>
                                     <action selector="Logout:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="wKR-3T-Vp0"/>
-                                    <segue destination="Bw1-fO-S19" kind="modal" identifier="firstscreen" id="3aJ-4P-mre"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wz9-68-C1n">
@@ -79,7 +78,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1894" y="-340"/>
+            <point key="canvasLocation" x="2946" y="-340"/>
         </scene>
         <!--Table View Controller - My cars-->
         <scene sceneID="lep-FU-hxY">
@@ -155,7 +154,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fKX-qS-LlF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3002" y="-95"/>
+            <point key="canvasLocation" x="3934" y="-340"/>
         </scene>
         <!--AppointmentI View Controller - appointment-->
         <scene sceneID="Lsc-co-rvC">
@@ -225,7 +224,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="inT-f2-Hoy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2394" y="-349"/>
+            <point key="canvasLocation" x="3446" y="-349"/>
         </scene>
         <!--My Car View Controller-->
         <scene sceneID="JFO-DL-hXQ">
@@ -335,7 +334,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Bw1-fO-S19" kind="push" id="XvX-8a-P1o"/>
+                                    <segue destination="Bw1-fO-S19" kind="push" id="qdC-c4-FJl"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aAw-Rs-kc4">
@@ -632,7 +631,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d6y-iV-nPL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="652" y="-310"/>
+            <point key="canvasLocation" x="538" y="-166"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="kOe-J5-6QY">
@@ -651,7 +650,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MuF-q4-2ls" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-656" y="46"/>
+            <point key="canvasLocation" x="-440" y="40"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="tKK-zr-y4x">
@@ -669,7 +668,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dZw-5c-308" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1368" y="-340"/>
+            <point key="canvasLocation" x="2420" y="-340"/>
         </scene>
     </scenes>
     <resources>
@@ -681,7 +680,6 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="XvX-8a-P1o"/>
         <segue reference="AIe-Ig-JSD"/>
     </inferredMetricsTieBreakers>
 </document>
