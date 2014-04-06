@@ -30,7 +30,7 @@
 
 - (IBAction)Logout:(id)sender {
     [PFUser logOut];
-   // [self dismissViewControllerAnimated:YES completion:nil];
-    [self performSegueWithIdentifier:@"firstscreen" sender:nil];
+    [self dismissViewControllerAnimated:YES completion:nil];
+  //  [self performSegueWithIdentifier:@"firstscreen" sender:nil];
 }
 @end
