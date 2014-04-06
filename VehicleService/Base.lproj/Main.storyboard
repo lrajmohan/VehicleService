@@ -68,7 +68,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="FgT-Ol-iDy" kind="modal" id="MY8-ZA-Ug5"/>
+                                    <segue destination="8iK-Rh-KID" kind="push" id="RTv-ns-Ycf"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -104,11 +104,6 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="My cars" id="MJh-EA-QaO">
-                        <barButtonItem key="leftBarButtonItem" title="Home" id="qXf-iv-uZh">
-                            <connections>
-                                <segue destination="jf0-rf-fMS" kind="modal" id="6Zq-Iv-sPY"/>
-                            </connections>
-                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="hf2-sY-lRl">
                             <connections>
                                 <segue destination="u14-ty-q93" kind="push" id="PaA-gR-WWv"/>
@@ -118,22 +113,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oTw-Sc-enP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1901" y="414"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="eaF-2g-IuQ">
-            <objects>
-                <navigationController definesPresentationContext="YES" id="FgT-Ol-iDy" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="gd0-Sy-bha">
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="8iK-Rh-KID" kind="relationship" relationship="rootViewController" id="a93-84-6DG"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="HHW-BP-3c4" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1341" y="414"/>
+            <point key="canvasLocation" x="2739" y="368"/>
         </scene>
         <!--map-->
         <scene sceneID="JDf-Oh-wC6">
@@ -301,7 +281,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x2n-5h-qH2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2414" y="414"/>
+            <point key="canvasLocation" x="3136" y="450"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="oSC-NI-7I1">
@@ -518,7 +498,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ru5-6i-fJV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="881" y="778"/>
+            <point key="canvasLocation" x="887" y="490"/>
         </scene>
         <!--RegisterUI View Controller - register-->
         <scene sceneID="WFz-8B-waT">
@@ -679,7 +659,4 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
-    <inferredMetricsTieBreakers>
-        <segue reference="AIe-Ig-JSD"/>
-    </inferredMetricsTieBreakers>
 </document>
