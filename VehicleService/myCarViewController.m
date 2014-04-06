@@ -72,7 +72,7 @@
     [car setObject:_yearlymileageField.text forKey:@"yearlymileage"];
     [car setObject:_mileageField.text forKey:@"mileages"];
     //saving the user along with the values
-    car[@"user"] = user;
+    car[@"user"] = user.username;
     [car save];
 
 

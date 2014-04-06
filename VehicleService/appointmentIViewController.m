@@ -74,7 +74,7 @@ PFObject *appointment = [PFObject objectWithClassName: @"appointment"];
 [appointment setObject:time forKey:@"time"];
     [appointment setObject:selectedDate forKey:@"datetime"];
 //saving the user along with the values
-appointment[@"user"] = user;
+appointment[@"user"] = user.username;
 [appointment save];
 
 // Upload car details to Parse

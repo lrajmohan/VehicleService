@@ -51,6 +51,8 @@
             NSLog(@"Successfully retrieved %d scores.", objects.count);
             // Do something with the found objects
             for (PFObject *object in objects) {
+                PFObject *post = object[@"user"];
+                NSLog(@"%@", post);
                 NSLog(@"%@", object.objectId);
             }
         } else {
