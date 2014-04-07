@@ -113,7 +113,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oTw-Sc-enP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2739" y="368"/>
+            <point key="canvasLocation" x="3265" y="368"/>
         </scene>
         <!--map-->
         <scene sceneID="JDf-Oh-wC6">
@@ -281,7 +281,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x2n-5h-qH2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3136" y="450"/>
+            <point key="canvasLocation" x="3662" y="450"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="oSC-NI-7I1">
@@ -457,48 +457,54 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                         <outlet property="providerSignInUsername" destination="wKg-Mq-cx6" id="F7a-Mw-goe"/>
                         <outlet property="providerUsername" destination="2MB-5F-QaO" id="YUb-gR-opv"/>
                         <outlet property="signInView" destination="qE8-Xe-A0g" id="kCG-LV-qxN"/>
-                        <segue destination="7dP-RF-Ka4" kind="modal" identifier="providerSignupSuccessful" id="SSj-sg-PnC"/>
+                        <segue destination="8xC-Q8-xTt" kind="modal" identifier="providerSignupSuccessful" id="SSj-sg-PnC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5yI-dp-ul8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="509" y="501"/>
         </scene>
-        <!--Provider Schedule Select View Controller-->
+        <!--Provider Schedule Select View Controller - Schedule-->
         <scene sceneID="bgY-z9-59o">
             <objects>
                 <viewController id="7dP-RF-Ka4" customClass="providerScheduleSelectViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="C04-Hs-s5z"/>
-                        <viewControllerLayoutGuide type="bottom" id="T2m-dV-3UM"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="WJE-a5-wuD">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="xcC-Dv-VFw">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Provide a service:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hZf-7I-gj7">
-                                <rect key="frame" x="92" y="99" width="136" height="21"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="CNk-9s-oxj">
+                                <rect key="frame" x="0.0" y="86" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o19-Ar-aJo">
-                                <rect key="frame" x="131" y="249" width="46" height="30"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="CNk-9s-oxj" id="RkY-Oq-oAJ">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Schedule" id="mzH-ci-lNN">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="ovZ-5f-dhU">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="o19-Ar-aJo">
+                                <rect key="frame" x="274" y="7" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button">
+                                <state key="normal" title="Get">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="get:" destination="7dP-RF-Ka4" eventType="touchUpInside" id="9A6-vu-f3y"/>
                                 </connections>
                             </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="ScheduleTableView" destination="xcC-Dv-VFw" id="6QN-tc-sPH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ru5-6i-fJV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="887" y="490"/>
+            <point key="canvasLocation" x="1335" y="501"/>
         </scene>
         <!--RegisterUI View Controller - register-->
         <scene sceneID="WFz-8B-waT">
@@ -649,6 +655,24 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dZw-5c-308" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2420" y="-340"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="GVi-bf-wD4">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="8xC-Q8-xTt" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="gw5-SK-fUi">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="7dP-RF-Ka4" kind="relationship" relationship="rootViewController" id="2tw-U5-TdP"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Icv-ow-6ZT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="907" y="501"/>
         </scene>
     </scenes>
     <resources>

@@ -9,11 +9,17 @@
 #import "providerScheduleSelectViewController.h"
 
 @interface providerScheduleSelectViewController ()
-
+{
+    //create arrays to store values
+    NSMutableArray *detailsArray;
+    
+}
 @end
 
 @implementation providerScheduleSelectViewController
 
+//get that table view
+@synthesize ScheduleTableView;
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -27,6 +33,34 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    // These will let us to use delegate methods
+    self.ScheduleTableView.delegate = self;
+    self.ScheduleTableView.dataSource = self;
+    
+    //testing the table view (put comma at the end to run properly)
+    detailsArray = [[NSMutableArray alloc]initWithObjects:@"1", @"2", @"3",  nil];
+}
+
+-(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+    return 1;
+}
+
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    //based on the number of objects in array this will be created
+    return [detailsArray count];
+}
+
+//last data structure to
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString *cellIdentifier = @"cell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier forIndexPath:indexPath];
+    //populate the tableview with contents of the array
+    cell.textLabel.text = [detailsArray objectAtIndex:indexPath.row];
+    
+    return cell;
 }
 
 - (void)didReceiveMemoryWarning
@@ -36,10 +70,10 @@
 }
 
 - (IBAction)get:(id)sender {
-    [self dothis];
+    [self getTheSchedule];
 }
 
-- (void)dothis
+- (void)getTheSchedule
 {
     //get the schedules from current time + 4 hrs(minimum time to pickup)
     PFQuery *query = [PFQuery queryWithClassName:@"appointment"];

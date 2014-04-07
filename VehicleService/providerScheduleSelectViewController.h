@@ -8,8 +8,10 @@
 
 #import <UIKit/UIKit.h>
 #import <Parse/Parse.h>
-@interface providerScheduleSelectViewController : UIViewController
+@interface providerScheduleSelectViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
+//get button
 - (IBAction)get:(id)sender;
-
+//table view
+@property (strong, nonatomic) IBOutlet UITableView *ScheduleTableView;
 
 @end
