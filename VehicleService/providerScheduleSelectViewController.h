@@ -12,6 +12,9 @@
 //get button
 - (IBAction)get:(id)sender;
 //table view
-@property (strong, nonatomic) IBOutlet UITableView *ScheduleTableView;
+
+//@property (strong, nonatomic) IBOutlet UITableView *ScheduleTableView;
+
+@property (weak, nonatomic) IBOutlet UITableView *ScheduleTableView;
 
 @end

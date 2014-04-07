@@ -13,9 +13,17 @@
 
 @synthesize window = _window;
 
+void onUncaughtException(NSException *exception)
+{
+    NSLog(@"uncaught exception: %@", exception.description);
+}
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     
+    // gets the error
+    
+    NSSetUncaughtExceptionHandler(&onUncaughtException);
     //parse
     [Parse setApplicationId:@"C1wcUhX2kRonMJasXAOTtPnx2GRjQGgcvVBjM2v6"
                   clientKey:@"wx9ulBFuGOp756UCdeuTJ4f3RvYfmUFlYY0WKVLv"];
