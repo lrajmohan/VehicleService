@@ -392,10 +392,10 @@
             </objects>
             <point key="canvasLocation" x="2094" y="-972"/>
         </scene>
-        <!--View Controller-->
+        <!--Load Response-->
         <scene sceneID="kTG-NL-sGu">
             <objects>
-                <viewController id="gL9-eT-13E" sceneMemberID="viewController">
+                <viewController id="gL9-eT-13E" customClass="LoadResponse" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="dtP-8p-AUj"/>
                         <viewControllerLayoutGuide type="bottom" id="4sg-9t-obJ"/>
@@ -423,7 +423,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="970-jr-inB" kind="push" id="6kt-2W-lbl"/>
+                                    <segue destination="970-jr-inB" kind="push" identifier="responseTrans" id="6kt-2W-lbl"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1061,10 +1061,10 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
             </objects>
             <point key="canvasLocation" x="1309" y="1151"/>
         </scene>
-        <!--Value Transfer View Controller-->
+        <!--Check Response Controller-->
         <scene sceneID="RrF-fT-s1E">
             <objects>
-                <viewController id="970-jr-inB" customClass="valueTransferViewController" sceneMemberID="viewController">
+                <viewController id="970-jr-inB" customClass="CheckResponseController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="R4B-Sg-uCt"/>
                         <viewControllerLayoutGuide type="bottom" id="w6m-EF-gZe"/>
@@ -1088,8 +1088,8 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
-                                    <outlet property="dataSource" destination="970-jr-inB" id="qqa-qV-em9"/>
-                                    <outlet property="delegate" destination="970-jr-inB" id="zyL-3U-0qG"/>
+                                    <outlet property="dataSource" destination="970-jr-inB" id="oL7-FW-F9j"/>
+                                    <outlet property="delegate" destination="970-jr-inB" id="kxI-TV-Sqg"/>
                                 </connections>
                             </tableView>
                         </subviews>
@@ -1097,17 +1097,17 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                     </view>
                     <navigationItem key="navigationItem" id="mXr-ma-fk9"/>
                     <connections>
-                        <outlet property="scheduleView" destination="vW8-VY-b0X" id="7Kz-IB-X8g"/>
+                        <outlet property="tableView" destination="vW8-VY-b0X" id="css-cx-GlV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qai-zM-R4s" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2782" y="-210"/>
         </scene>
-        <!--View Controller-->
+        <!--Response Details-->
         <scene sceneID="nv3-AK-t2u">
             <objects>
-                <viewController id="puW-PA-hVO" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="responseDetails" id="puW-PA-hVO" customClass="responseDetails" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ChG-BK-lQh"/>
                         <viewControllerLayoutGuide type="bottom" id="1fw-8b-0X8"/>
@@ -1115,8 +1115,26 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                     <view key="view" contentMode="scaleToFill" id="T5M-mf-nUu">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5aG-BR-tW5">
+                                <rect key="frame" x="139" y="170" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lFi-7J-Q4i">
+                                <rect key="frame" x="139" y="247" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="otherDetailsLabel" destination="lFi-7J-Q4i" id="sTW-kn-Ak5"/>
+                        <outlet property="providerLabel" destination="5aG-BR-tW5" id="pKx-Xo-eji"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nyV-8m-Ykm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

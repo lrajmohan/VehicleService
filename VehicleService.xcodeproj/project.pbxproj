@@ -34,6 +34,9 @@
 		35B1C06519049012009761CF /* RequestDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35B1C06419049012009761CF /* RequestDetailsViewController.m */; };
 		35B1C068190490CA009761CF /* valueTransferViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35B1C067190490CA009761CF /* valueTransferViewController.m */; };
 		35DF1F99190614DB00AE1700 /* providerDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35DF1F98190614DB00AE1700 /* providerDetailsViewController.m */; };
+		35DF1F9C190639B300AE1700 /* CheckResponseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35DF1F9B190639B300AE1700 /* CheckResponseController.m */; };
+		35DF1F9F190639F800AE1700 /* LoadResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 35DF1F9E190639F700AE1700 /* LoadResponse.m */; };
+		35DF1FA219063A0600AE1700 /* responseDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 35DF1FA119063A0600AE1700 /* responseDetails.m */; };
 		35DF28C618DFC9E60038D583 /* RegisterUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35DF28C518DFC9E60038D583 /* RegisterUIViewController.m */; };
 		35DF28C818DFCB0A0038D583 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35DF28C718DFCB0A0038D583 /* Parse.framework */; };
 		35DF28CE18DFCB770038D583 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35DF28C918DFCB760038D583 /* AudioToolbox.framework */; };
@@ -112,6 +115,12 @@
 		35B1C067190490CA009761CF /* valueTransferViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = valueTransferViewController.m; sourceTree = "<group>"; };
 		35DF1F97190614DB00AE1700 /* providerDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = providerDetailsViewController.h; sourceTree = "<group>"; };
 		35DF1F98190614DB00AE1700 /* providerDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = providerDetailsViewController.m; sourceTree = "<group>"; };
+		35DF1F9A190639B300AE1700 /* CheckResponseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CheckResponseController.h; sourceTree = "<group>"; };
+		35DF1F9B190639B300AE1700 /* CheckResponseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CheckResponseController.m; sourceTree = "<group>"; };
+		35DF1F9D190639F700AE1700 /* LoadResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadResponse.h; sourceTree = "<group>"; };
+		35DF1F9E190639F700AE1700 /* LoadResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadResponse.m; sourceTree = "<group>"; };
+		35DF1FA019063A0600AE1700 /* responseDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = responseDetails.h; sourceTree = "<group>"; };
+		35DF1FA119063A0600AE1700 /* responseDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = responseDetails.m; sourceTree = "<group>"; };
 		35DF28C418DFC9E60038D583 /* RegisterUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterUIViewController.h; sourceTree = "<group>"; };
 		35DF28C518DFC9E60038D583 /* RegisterUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterUIViewController.m; sourceTree = "<group>"; };
 		35DF28C718DFCB0A0038D583 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
@@ -255,6 +264,12 @@
 				35DF1F98190614DB00AE1700 /* providerDetailsViewController.m */,
 				35B1C05719043AB9009761CF /* demoViewController.h */,
 				35B1C05819043AB9009761CF /* demoViewController.m */,
+				35DF1F9A190639B300AE1700 /* CheckResponseController.h */,
+				35DF1F9B190639B300AE1700 /* CheckResponseController.m */,
+				35DF1F9D190639F700AE1700 /* LoadResponse.h */,
+				35DF1F9E190639F700AE1700 /* LoadResponse.m */,
+				35DF1FA019063A0600AE1700 /* responseDetails.h */,
+				35DF1FA119063A0600AE1700 /* responseDetails.m */,
 				3570914418F0CBF8000639B3 /* providerScheduleSelectViewController.h */,
 				3570914518F0CBF8000639B3 /* providerScheduleSelectViewController.m */,
 				351B598418E1FC8600484088 /* cardetailsViewController.h */,
@@ -430,6 +445,9 @@
 				357102C118DAA5B000DA17E4 /* finalUIAppDelegate.m in Sources */,
 				357102C718DAA5B000DA17E4 /* finalUIViewController.m in Sources */,
 				35E2F11C18DB96B600DB261E /* MapUIViewController.m in Sources */,
+				35DF1F9C190639B300AE1700 /* CheckResponseController.m in Sources */,
+				35DF1FA219063A0600AE1700 /* responseDetails.m in Sources */,
+				35DF1F9F190639F800AE1700 /* LoadResponse.m in Sources */,
 				35B1C05919043AB9009761CF /* demoViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

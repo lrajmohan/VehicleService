@@ -78,7 +78,7 @@
     RequestDetailsViewController *ctrl = [self.storyboard instantiateViewControllerWithIdentifier:@"RequestDetailsViewController"];
     //for getting appointment date & time
     PFQuery *requestQuery1=[PFQuery queryWithClassName:@"appointment"];
-    [requestQuery whereKey:@"username" equalTo:selectedCell.textLabel.text];
+    [requestQuery1 whereKey:@"username" equalTo:selectedCell.textLabel.text];
     NSArray *results1 = [requestQuery1 findObjects];
 
     ctrl.text=cellText;
