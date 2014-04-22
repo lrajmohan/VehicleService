@@ -9,6 +9,9 @@
 #import "appointmentIViewController.h"
 
 @interface appointmentIViewController ()
+{
+        NSArray* zipcodeArray;
+}
 
 @end
 
@@ -67,6 +70,7 @@
 //{
 
 //current user and his vehicle info
+
 PFUser *user = [PFUser currentUser];
     //adding appointment object
 PFObject *appointment = [PFObject objectWithClassName: @"appointment"];
@@ -74,8 +78,50 @@ PFObject *appointment = [PFObject objectWithClassName: @"appointment"];
 [appointment setObject:time forKey:@"time"];
     [appointment setObject:selectedDate forKey:@"datetime"];
 //saving the user along with the values
-appointment[@"user"] = user.username;
-[appointment save];
+    appointment[@"username"] = user.username;
+    appointment[@"userid"] = user.objectId;
+    //  [query orderByAscending:@"datetime"];
+    PFQuery *query = [PFQuery queryWithClassName:@"myDetails"];
+    [query whereKey:@"user" equalTo:user.objectId];
+   // [query selectKeys:@[@"zipcode"]];
+    //getting the object and converting to string
+    PFObject* zipcodeObj = [query getFirstObject];
+    NSString *zipcodeString = zipcodeObj[@"zipCode"];
+    appointment[@"zipcode"] = zipcodeString;
+    // appointment[@"zipcode"] = zipcode;
+    [appointment save];
+    /*
+    //zipcode retreival
+    PFQuery *query = [PFQuery queryWithClassName:@"myDetails"];
+    [query whereKey:@"user" equalTo:user.objectId];
+        [query selectKeys:@[@"zipcode"]];
+    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+        if (!error) {
+            // The find succeeded.
+            NSLog(@"Successfully retrieved %d scores.", objects.count);
+            // Do something with the found objects
+            for (PFObject *object in objects) {
+                NSLog(@"%@", object.objectId);
+ zipcodeArray = [query findObjects];
+                  //  appointment[@"zipcode"] = zipcodeArray[0];
+            }
+        } else {
+            // Log details of the failure
+            NSLog(@"Error: %@ %@", error, [error userInfo]);
+        }
+        
+        for (PFObject *object1 in zipcodeArray) {
+            appointment[@"username"] = user.username;
+            appointment[@"userid"] = user.objectId;
+            appointment[@"zipcode"] = object1;
+ NSLog(@"Successfully retrieved %d scores.", zipcodeArray.count);
+            
+        }
+         [appointment save];
+        
+    }];  */
+    
+
 
 // Upload car details to Parse
 [appointment saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {

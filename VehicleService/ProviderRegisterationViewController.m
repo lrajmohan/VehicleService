@@ -34,6 +34,7 @@
     self.providerSignInUsername.delegate = self;
     self.providerSignInPassword.delegate = self;
     self.providerCompanyName.delegate = self;
+    self.zipcode.delegate = self;
 	// Do any additional setup after loading the view.
 }
 
@@ -64,7 +65,7 @@
 
 - (void) checkFieldsComplete
 {
-    if([_providerUsername.text isEqualToString:@""] || [_providerEmailId.text isEqualToString:@""] || [_providerPassword.text isEqualToString:@""] || [_providerConfirmPassword.text isEqualToString:@""] || [_providerCompanyName.text isEqualToString:@""])
+    if([_providerUsername.text isEqualToString:@""] || [_providerEmailId.text isEqualToString:@""] || [_providerPassword.text isEqualToString:@""] || [_providerConfirmPassword.text isEqualToString:@""] || [_providerCompanyName.text isEqualToString:@""]|| [_zipcode.text isEqualToString:@""])
     {
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Oops" message:@"Please enter all the fields" delegate:nil cancelButtonTitle:@"OKay" otherButtonTitles:nil];
         [alert show];
@@ -91,6 +92,7 @@
     provider.email = _providerEmailId.text;
     provider.password = _providerPassword.text;
     provider[@"companyname"] = _providerCompanyName.text;
+    provider[@"zipcode"] = _zipcode.text;
     //usertype to distinguish with user 
     provider[@"usertype"] = @"provider";
     [provider signUpInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {

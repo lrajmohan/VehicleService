@@ -15,6 +15,7 @@
 @property (weak, nonatomic) IBOutlet UITextField *providerPassword;
 @property (weak, nonatomic) IBOutlet UITextField *providerConfirmPassword;
 @property (weak, nonatomic) IBOutlet UITextField *providerCompanyName;
+@property (weak, nonatomic) IBOutlet UITextField *zipcode;
 
 
 

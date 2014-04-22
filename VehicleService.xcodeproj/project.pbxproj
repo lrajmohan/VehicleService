@@ -29,6 +29,11 @@
 		357102DA18DAA5B100DA17E4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 357102D818DAA5B100DA17E4 /* InfoPlist.strings */; };
 		357102DC18DAA5B100DA17E4 /* VehicleServiceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 357102DB18DAA5B100DA17E4 /* VehicleServiceTests.m */; };
 		357102E618DAA98800DA17E4 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 357102E518DAA98800DA17E4 /* background.png */; };
+		35B1C05919043AB9009761CF /* demoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35B1C05819043AB9009761CF /* demoViewController.m */; };
+		35B1C06219048EED009761CF /* myDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35B1C06119048EED009761CF /* myDetailsViewController.m */; };
+		35B1C06519049012009761CF /* RequestDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35B1C06419049012009761CF /* RequestDetailsViewController.m */; };
+		35B1C068190490CA009761CF /* valueTransferViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35B1C067190490CA009761CF /* valueTransferViewController.m */; };
+		35DF1F99190614DB00AE1700 /* providerDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35DF1F98190614DB00AE1700 /* providerDetailsViewController.m */; };
 		35DF28C618DFC9E60038D583 /* RegisterUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35DF28C518DFC9E60038D583 /* RegisterUIViewController.m */; };
 		35DF28C818DFCB0A0038D583 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35DF28C718DFCB0A0038D583 /* Parse.framework */; };
 		35DF28CE18DFCB770038D583 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35DF28C918DFCB760038D583 /* AudioToolbox.framework */; };
@@ -97,6 +102,16 @@
 		357102D918DAA5B100DA17E4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		357102DB18DAA5B100DA17E4 /* VehicleServiceTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VehicleServiceTests.m; sourceTree = "<group>"; };
 		357102E518DAA98800DA17E4 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
+		35B1C05719043AB9009761CF /* demoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = demoViewController.h; sourceTree = "<group>"; };
+		35B1C05819043AB9009761CF /* demoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = demoViewController.m; sourceTree = "<group>"; };
+		35B1C06019048EED009761CF /* myDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = myDetailsViewController.h; sourceTree = "<group>"; };
+		35B1C06119048EED009761CF /* myDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = myDetailsViewController.m; sourceTree = "<group>"; };
+		35B1C06319049012009761CF /* RequestDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RequestDetailsViewController.h; sourceTree = "<group>"; };
+		35B1C06419049012009761CF /* RequestDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RequestDetailsViewController.m; sourceTree = "<group>"; };
+		35B1C066190490CA009761CF /* valueTransferViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = valueTransferViewController.h; sourceTree = "<group>"; };
+		35B1C067190490CA009761CF /* valueTransferViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = valueTransferViewController.m; sourceTree = "<group>"; };
+		35DF1F97190614DB00AE1700 /* providerDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = providerDetailsViewController.h; sourceTree = "<group>"; };
+		35DF1F98190614DB00AE1700 /* providerDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = providerDetailsViewController.m; sourceTree = "<group>"; };
 		35DF28C418DFC9E60038D583 /* RegisterUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterUIViewController.h; sourceTree = "<group>"; };
 		35DF28C518DFC9E60038D583 /* RegisterUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterUIViewController.m; sourceTree = "<group>"; };
 		35DF28C718DFCB0A0038D583 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
@@ -236,10 +251,20 @@
 				357102BF18DAA5B000DA17E4 /* finalUIAppDelegate.h */,
 				357102C018DAA5B000DA17E4 /* finalUIAppDelegate.m */,
 				357102C218DAA5B000DA17E4 /* Main.storyboard */,
+				35DF1F97190614DB00AE1700 /* providerDetailsViewController.h */,
+				35DF1F98190614DB00AE1700 /* providerDetailsViewController.m */,
+				35B1C05719043AB9009761CF /* demoViewController.h */,
+				35B1C05819043AB9009761CF /* demoViewController.m */,
 				3570914418F0CBF8000639B3 /* providerScheduleSelectViewController.h */,
 				3570914518F0CBF8000639B3 /* providerScheduleSelectViewController.m */,
 				351B598418E1FC8600484088 /* cardetailsViewController.h */,
 				351B598518E1FC8600484088 /* cardetailsViewController.m */,
+				35B1C06319049012009761CF /* RequestDetailsViewController.h */,
+				35B1C06419049012009761CF /* RequestDetailsViewController.m */,
+				35B1C066190490CA009761CF /* valueTransferViewController.h */,
+				35B1C067190490CA009761CF /* valueTransferViewController.m */,
+				35B1C06019048EED009761CF /* myDetailsViewController.h */,
+				35B1C06119048EED009761CF /* myDetailsViewController.m */,
 				35EAB82A18E171B600B7FE82 /* myCarViewController.h */,
 				35EAB82B18E171B600B7FE82 /* myCarViewController.m */,
 				35EAB82418E0BEE000B7FE82 /* LoginViewController.h */,
@@ -392,15 +417,20 @@
 			files = (
 				351B598618E1FC8600484088 /* cardetailsViewController.m in Sources */,
 				35FED60F18EBAB3E00DCF8FA /* appointmentIViewController.m in Sources */,
+				35B1C068190490CA009761CF /* valueTransferViewController.m in Sources */,
 				3560F82918ECCA4D004F4777 /* ProviderRegisterationViewController.m in Sources */,
 				357102BD18DAA5B000DA17E4 /* main.m in Sources */,
 				35DF28C618DFC9E60038D583 /* RegisterUIViewController.m in Sources */,
 				35EAB82618E0BEE000B7FE82 /* LoginViewController.m in Sources */,
+				35B1C06219048EED009761CF /* myDetailsViewController.m in Sources */,
 				3570914618F0CBF8000639B3 /* providerScheduleSelectViewController.m in Sources */,
+				35B1C06519049012009761CF /* RequestDetailsViewController.m in Sources */,
+				35DF1F99190614DB00AE1700 /* providerDetailsViewController.m in Sources */,
 				35EAB82C18E171B600B7FE82 /* myCarViewController.m in Sources */,
 				357102C118DAA5B000DA17E4 /* finalUIAppDelegate.m in Sources */,
 				357102C718DAA5B000DA17E4 /* finalUIViewController.m in Sources */,
 				35E2F11C18DB96B600DB261E /* MapUIViewController.m in Sources */,
+				35B1C05919043AB9009761CF /* demoViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

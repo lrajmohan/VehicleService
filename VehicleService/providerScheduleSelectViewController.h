@@ -15,6 +15,13 @@
 
 //@property (strong, nonatomic) IBOutlet UITableView *ScheduleTableView;
 
-@property (weak, nonatomic) IBOutlet UITableView *ScheduleTableView;
+//@property (weak, nonatomic) IBOutlet UITableView *ScheduleTableView;
+
+- (IBAction)logoutProvider:(id)sender;
+
+- (IBAction)passValue:(id)sender;
+
 
 @end
+
+
