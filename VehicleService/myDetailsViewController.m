@@ -70,7 +70,7 @@
     [myDetails setObject:_zipcode.text forKey:@"zipCode"];
     [myDetails setObject:_phoneNo.text forKey:@"phno"];
     //saving the user along with the values
-    myDetails[@"user"] = user.objectId;
+    myDetails[@"user"] = user.username;
     myDetails[@"usertype"] = @"user";
     [myDetails save];
     

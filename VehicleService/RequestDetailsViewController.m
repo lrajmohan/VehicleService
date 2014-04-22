@@ -14,12 +14,15 @@
 
 @implementation RequestDetailsViewController
 @synthesize  data;
+@synthesize  data1;
 @synthesize  userLabel;
 @synthesize text;
 @synthesize zipcodeLabel;
 @synthesize cityLabel;
 @synthesize stateLabel;
 @synthesize phonenumberLabel;
+@synthesize appointmentDate;
+@synthesize appointmenttime;
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -64,10 +67,14 @@
   //  self.tableView.delegate=self;
     userLabel.text=text;
     PFObject *pf = [data firstObject];
+    //getting  appointment time
+    PFObject *pf1 = [data1 firstObject];
     cityLabel.text = [pf objectForKey:@"city"];
     stateLabel.text = [pf objectForKey:@"state"];
     zipcodeLabel.text = [pf objectForKey:@"zipCode"];
     phonenumberLabel.text = [pf objectForKey:@"phno"];
+    appointmentDate.text = [pf1 objectForKey:@"date"];
+    appointmenttime.text = [pf1 objectForKey:@"time"];
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Sorry!" message:[NSString stringWithFormat:@"%d", [data count]]  delegate:nil cancelButtonTitle:@"OKay" otherButtonTitles:nil];
     [alert show];
     
@@ -97,14 +104,18 @@
     PFUser *user = [PFUser currentUser];
     //adding appointment object
     PFObject *ResponseConfirmation = [PFObject objectWithClassName: @"ResponseConfirmation"];
-    PFObject *pf = [data firstObject];
-    
+ //   PFObject *pf = [data firstObject];
+    //datetime save
+ //   PFObject *pf1 = [data1 firstObject];
     [ResponseConfirmation setObject:text forKey:@"user"];
    // [ResponseConfirmation setObject:@"provider1" forKey:@"ServiceProviderName"];
     //[appointment setObject:selectedDate forKey:@"datetime"];
     //saving the user along with the values
     ResponseConfirmation[@"providername"] = user.username;
     ResponseConfirmation[@"providerid"] = user.objectId;
+    //datetime save
+    ResponseConfirmation[@"date"] = appointmentDate.text;
+    ResponseConfirmation[@"time"] = appointmenttime.text;
 //    ResponseConfirmation[@"username"] =
     [ResponseConfirmation save];
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Success!!" message:@"saved"  delegate:nil cancelButtonTitle:@"OKay" otherButtonTitles:nil];

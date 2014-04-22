@@ -82,7 +82,7 @@ PFObject *appointment = [PFObject objectWithClassName: @"appointment"];
     appointment[@"userid"] = user.objectId;
     //  [query orderByAscending:@"datetime"];
     PFQuery *query = [PFQuery queryWithClassName:@"myDetails"];
-    [query whereKey:@"user" equalTo:user.objectId];
+    [query whereKey:@"user" equalTo:user.username];
    // [query selectKeys:@[@"zipcode"]];
     //getting the object and converting to string
     PFObject* zipcodeObj = [query getFirstObject];
