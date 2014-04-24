@@ -14,4 +14,7 @@
 @property (weak,nonatomic) NSString *string1;
 @property (weak,nonatomic) NSString *string2;
 @property (weak,nonatomic) NSArray *data;
+- (IBAction)yes:(id)sender;
+- (IBAction)no:(id)sender;
+
 @end

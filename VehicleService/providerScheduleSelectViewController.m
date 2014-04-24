@@ -8,7 +8,7 @@
 
 #import "providerScheduleSelectViewController.h"
 #import "valueTransferViewController.h"
-
+#import "ConfirmedData.h"
 @interface providerScheduleSelectViewController ()
 {
     //create arrays to store values
@@ -67,6 +67,18 @@
         [requestQuery selectKeys:@[@"userId"] ];
         NSArray *results = [requestQuery findObjects];
         valueTransferViewController *destViewController = segue.destinationViewController;
+        destViewController.data= results;
+    }
+    
+    if([segue.identifier isEqualToString:@"confirmedTrans"])
+    {
+        PFQuery *requestQuery=[PFQuery queryWithClassName:@"ResponseConfirmation"];
+        //[requestQuery whereKey:@"datetime" greaterThanOrEqualTo:[NSDate date]];
+        [requestQuery whereKey:@"status" equalTo:@"confirm"];
+        [requestQuery orderByAscending:@"datetime"];
+        [requestQuery selectKeys:@[@"user"]];
+        NSArray *results = [requestQuery findObjects];
+        ConfirmedData *destViewController = segue.destinationViewController;
         destViewController.data= results;
     }
 }

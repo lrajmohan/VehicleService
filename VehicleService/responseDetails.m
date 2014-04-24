@@ -53,4 +53,28 @@
 }
 */
 
+
+- (IBAction)yes:(id)sender {
+    
+    PFUser *user = [PFUser currentUser];
+    PFQuery *query = [PFQuery queryWithClassName:@"ResponseConfirmation"];
+    [query whereKey:@"user" equalTo:user.username];
+    // [query selectKeys:@[@"zipcode"]];
+    //getting the object and converting to string
+    PFObject* zipcodeObj = [query getFirstObject];
+    NSString *zipcodeString = zipcodeObj.objectId;
+    NSLog(@"zipcodeis%@", zipcodeString);
+    
+    [query getObjectInBackgroundWithId:zipcodeString block:^(PFObject *responseOfUser, NSError *error) {
+   // PFObject *responseOfUser = [PFObject objectWithClassName: @"ResponseConfirmation"];
+     //saving the user's confirmation
+     responseOfUser[@"status"] = @"confirm";
+        [responseOfUser saveInBackground];
+    }];
+}
+
+- (IBAction)no:(id)sender {
+    PFObject *responseOfUser = [PFObject objectWithClassName: @"ResponseConfirmation"];
+    //saving the user's confirmation
+    responseOfUser[@"status"] = @"decline"; }
 @end
