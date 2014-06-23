@@ -2,7 +2,7 @@
 //  CheckResponseController.h
 //  VehicleService
 //
-//  Created by Rajmohan on 4/21/14.
+//  Created by Rajmohan Loganathan on 4/21/14.
 //  Copyright (c) 2014 Rajmohan Loganathan. All rights reserved.
 //
 
